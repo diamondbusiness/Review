@@ -1,57 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Review Interface</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Tate</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/aboutUs.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="review-container">
-        <div class="rating-summary">
-            <div class="average-rating">
-                <h1 class="rating rating-heading">4.9<span class="out-of">/5</span></h1>
+
+    <nav class="navbar navbar-light bg-white nav-mobiles">
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- Menu Icon, always visible -->
+            <button type="button" class="btn border-0" >
+                <i style="font-size: 30px;" class="fas fa-bars"></i>
+            </button>
+
+
+            <div id="sidebarMenu" class="sidebar">
+                <ul class="menu-list">
+                    <li><a href="#!">NGHỆ THUẬT & NGHỆ SĨ</a></li>
+                    <li><a href="#!">TRIỂN LÃM & SỰ KIỆN</a></li>
+                    <li><a href="#!">DỊCH VỤ</a></li>
+                </ul>
             </div>
-            <div class="stars">
-                <span class="filled-stars">★★★★★</span>
-                <span class="total-reviews">(210 lượt đánh giá)</span>
-            </div>
-            <p>Đây là thông tin người mua đánh giá shop bán sản phẩm này có đúng mô tả không.</p>
-            <div class="rating-breakdown"   >
-                <div class="star-line"><span style="color: red;">★★★★★</span><div class="bar"><div class="fill" style="width: 80%;"></div></div>100</div>
-                <div class="star-line"><span style="color: rgb(246, 115, 68);">★★★★</span><div class="bar"><div class="fill" style="width: 70%;"></div></div>50</div>
-                <div class="star-line"><span style="color: rgb(229, 108, 2);">★★★</span><div class="bar"><div class="fill" style="width: 50%;"></div></div>30</div>
-                <div class="star-line"><span style="color: orange;">★★</span><div class="bar"><div class="fill" style="width: 30%;"></div></div>20</div>
-                <div class="star-line"><span style="color: rgb(255, 187, 0);">★</span><div class="bar"><div class="fill" style="width: 10%;"></div></div>10</div>
-            </div>
-        </div>
-        <div class="reviews">
-            <div class="review">
-                <div class="user-info">N*** Minh <span class="date">09:11 | 17/09/2018</span></div>
-                <div class="rating">Tốt ★★★★★</div>
-                <p>Sản phẩm tốt vượt mong đợi</p>
-            </div>
-            <div class="review">
-                <div class="user-info">D*** Ngoc <span class="date">06:06 | 16/09/2018</span></div>
-                <div class="rating">Tốt ★★★★★</div>
-                <p>Giao đến được lắp ráp kiểm tra thử trước khi trả tiền, chất lượng dịch vụ 10 điểm nhe, nên mua</p>
-            </div>
-            <div class="review">
-                <div class="user-info">T*** Ngoc <span class="date">10:23 | 15/09/2018</span></div>
-                <div class="rating">Tốt ★★★★★</div>
-                <p>Đàn êm lắm, có tặng bao đựng và được giảm giá, tuyệt vời...</p>
-            </div>
-            <div class="review">
-                <div class="user-info">H*** Yen <span class="date">08:37 | 31/08/2018</span></div>
-                <div class="rating">Tốt ★★★★★</div>
-                <p>Không có gì để chê tuy nhiên thời gian chờ hàng hơi lâu chắc tại mình cũng ở xa quá</p>
-            </div>
-            <div>
-                <div class="user-info">H*** Yen <span class="date">08:37 | 31/08/2018</span></div>
-                 <div class="rating">Tốt ★★★★</div>
-                 <p>Giao chậm hơn dự kiến, thiếu miếng lau như đã nói </p>
+    
+          
+            <a href="#!"><img src="./img/logo.png" class="logo"/></a>
+    
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search..." id="searchInput">
+                <button class="search-icon" id="searchButton">&#128269;</button>
             </div>
         </div>
+    </nav>
+
+
+
+   <nav class="nav desktop" >
+        <a href="#!"><img src="./img/logo.png" class="logo"/></a>
+        <a href="#!" class="nav-link">
+            NGHỆ THUẬT & NGHỆ SĨ
+        </a>
+        <a href="#!" class="nav-link">TRIỂN LÃM & SỰ KIỆN</a>
+        <a href="#!" class="nav-link">DỊCH VỤ</a>
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search..." id="searchInput">
+            <button class="search-icon" id="searchButton">&#128269;</button>
+        </div>
+    </nav>
+  <header class="text-center bg-dark text-white p-3">
+    <h1 class="display-4">VỀ CHÚNG TÔI</h1>
+    <p class="lead">
+        "Chúng tôi có sứ mệnh mang đến cho công chúng niềm vui và sự hiểu biết sâu sắc về 
+        các thể loại nhạc cổ điển từ những thập kỷ trước đến nay, đồng thời tôn vinh vẻ đẹp của
+         âm nhạc quốc tế từ cổ điển đến hiện đại."
+    </p>
+  </header>
+
+  <!-- Who We Are Section -->
+  <section class="container mt-5">
+    <h2 class="text-center mb-5">CHÚNG TÔI LÀ AI</h2>
+    <div class="row text-center">
+        <!-- Card 1: History of Tate -->
+      <div class="col-md-3 mb-3 col-lg-3">
+        <div class="card">
+          <img src="./img/history.jpg" class="card-img-top" alt="Board of Trustees">
+          <div class="card-body">
+            <h5 class="card-title">Lịch Sử Hình Thành</h5>
+            <p class="card-text">Cửa hàng của chúng tôi được thành lập với tâm huyết mang đến cho khách hàng những sản phẩm chất lượng cao, phù hợp với nhu cầu và thị hiếu. Trải qua nhiều năm phát triển, chúng tôi đã không ngừng cải tiến và hoàn thiện để phục vụ khách hàng tốt hơn, xây dựng vị thế vững chắc trong lòng người tiêu dùng.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Board of Trustees -->
+      <div class="col-md-3 mb-3 col-lg-3">
+        <div class="card">
+          <img src="./img/muctieu.jpg" class="card-img-top" alt="History of Tate">
+          <div class="card-body">
+            <h5 class="card-title">Mục tiêu kinh doanh</h5>
+            <p class="card-text">Chúng tôi cam kết cung cấp những sản phẩm không chỉ đáp ứng nhu cầu mà còn vượt trên sự mong đợi của khách hàng. Từ chất lượng sản phẩm, dịch vụ khách hàng đến hậu mãi, mọi khía cạnh đều được đầu tư tỉ mỉ nhằm xây dựng một mối quan hệ bền vững với khách hàng.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Access to Information -->
+      <div class="col-md-3 mb-3 col-lg-3">
+        <div class="card">
+          <img src="./img/doingu.jpg" class="card-img-top" alt="Access to Information">
+          <div class="card-body">
+            <h5 class="card-title">Đội Ngũ Phát Triển</h5>
+            <p class="card-text">Chúng tôi tự hào sở hữu một đội ngũ trẻ, nhiệt huyết và sáng tạo, với sự am hiểu sâu sắc về thị trường cũng như nhu cầu khách hàng. Mỗi thành viên đều có kinh nghiệm và niềm đam mê, cùng chung tay xây dựng một thương hiệu đáng tin cậy.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-3 mb-3 col-lg-3">
+        <div class="card">
+          <img src="./img/uytin.jpg" class="card-img-top" alt="Access to Information">
+          <div class="card-body">
+            <h5 class="card-title">Uy Tín và Sự Tin Cậy</h5>
+            <p class="card-text">Uy tín và niềm tin của khách hàng là tài sản quý báu nhất của chúng tôi. Với tiêu chí "Chất lượng – Chân thành – Chuyên nghiệp," chúng tôi luôn nỗ lực mang đến những sản phẩm tốt nhất và dịch vụ tận tâm, khẳng định thương hiệu là nơi khách hàng hoàn toàn có thể tin cậy.</p>
+          </div>
+        </div>
+      </div>
+      
     </div>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+ document.querySelector(".btn").addEventListener("click", function() {
+    document.getElementById("sidebarMenu").classList.toggle("open");
+});
+
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
